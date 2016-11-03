@@ -33,11 +33,11 @@ class benchmark():
             print "Failed Request: " + str(self.counter["200"]-self.req)
             print "Total Request: " + str(self.req)
             print "Percentage of the requests served within a certain time (ms)"
-            print "50%       " + str(self.avgtime[int(len(self.avgtime)/2.0)]*10**3)
-            print "60%       " + str(self.avgtime[int(len(self.avgtime)/1.66)]*10**3)
-            print "70%       " + str(self.avgtime[int(len(self.avgtime)/1.428)]*10**3)
-            print "80%       " + str(self.avgtime[int(len(self.avgtime)/1.25)]*10**3)
-            print "90%       " + str(self.avgtime[int(len(self.avgtime)/1.11)]*10**3)
+            print "50%       " + str(self.avgtime[int(len(self.avgtime)/2.0)]*10**-3)
+            print "60%       " + str(self.avgtime[int(len(self.avgtime)/1.66)]*10**-3)
+            print "70%       " + str(self.avgtime[int(len(self.avgtime)/1.428)]*10**-3)
+            print "80%       " + str(self.avgtime[int(len(self.avgtime)/1.25)]*10**-3)
+            print "90%       " + str(self.avgtime[int(len(self.avgtime)/1.11)]*10**-3)
             print "100%      " + str(self.avgtime[-1])
 
 def start(input): #starting point
